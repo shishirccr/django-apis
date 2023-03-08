@@ -1,3 +1,6 @@
+## Requirements
+- https://drive.google.com/file/d/1orAlKA78_qbradx530JmQ0CXSZXZyTGw/view
+
 ## Installation
 After you have unzipped the code, you want to create a virtual environment, so you have a clean python installation.
 You can do this by running the command
