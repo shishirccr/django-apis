@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "aa752daf-de6c-44f5-a7b0-53841a9fc449",
+		"name": "Click_Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9610023"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1NjE5MTg3LCJpYXQiOjE2NzU2MTg4ODcsImp0aSI6IjMzZTdhMmE4NzI1MTQxOGU5MzZkN2Q0ODQ1MzI1MjUyIiwidXNlcl9pZCI6MX0.I26yb76Yhl2oNzhUgO81LCkC33Sjat4iIh_163wYQS0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Vivek\",\r\n\"salary\": \"145000\",\r\n\"currency\": \"USD\",\r\n\"department\": \"Engineering\",\r\n\"sub_department\": \"Platform\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/employee/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Stat All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1NjE5MTg3LCJpYXQiOjE2NzU2MTg4ODcsImp0aSI6IjMzZTdhMmE4NzI1MTQxOGU5MzZkN2Q0ODQ1MzI1MjUyIiwidXNlcl9pZCI6MX0.I26yb76Yhl2oNzhUgO81LCkC33Sjat4iIh_163wYQS0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/employee/?type=all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Stat Contract",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1NjE5MTg3LCJpYXQiOjE2NzU2MTg4ODcsImp0aSI6IjMzZTdhMmE4NzI1MTQxOGU5MzZkN2Q0ODQ1MzI1MjUyIiwidXNlcl9pZCI6MX0.I26yb76Yhl2oNzhUgO81LCkC33Sjat4iIh_163wYQS0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/employee/?type=contract",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "contract"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Stat Dept",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1NTQyMDEyLCJpYXQiOjE2NzU1NDE3MTIsImp0aSI6IjA1OWE5ODBlNDg4MzQ0MzdiYzE2ODhmYmEwMThmMzMwIiwidXNlcl9pZCI6MX0.f60SqDh0lpElVZ7wpN2ioF44EcaxrynUVECiTiknYvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/employee/?type=department",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "department"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Stat Sub Dept",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1NTQyMDEyLCJpYXQiOjE2NzU1NDE3MTIsImp0aSI6IjA1OWE5ODBlNDg4MzQ0MzdiYzE2ODhmYmEwMThmMzMwIiwidXNlcl9pZCI6MX0.f60SqDh0lpElVZ7wpN2ioF44EcaxrynUVECiTiknYvg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/employee/?type=sub_department",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "sub_department"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc1NjE5MTg3LCJpYXQiOjE2NzU2MTg4ODcsImp0aSI6IjMzZTdhMmE4NzI1MTQxOGU5MzZkN2Q0ODQ1MzI1MjUyIiwidXNlcl9pZCI6MX0.I26yb76Yhl2oNzhUgO81LCkC33Sjat4iIh_163wYQS0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/employee/ViveK",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"ViveK"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ckent@email.com\",\r\n\"username\": \"ckent\",\r\n\"password\": \"Today@22\",\r\n\"password2\": \"Today@22\",\r\n\"first_name\": \"Clark\",\r\n\"last_name\": \"Kent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/auth/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"ckent\",\r\n\"password\": \"Today@22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/auth/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
