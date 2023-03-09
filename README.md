@@ -1,5 +1,23 @@
-## Requirements
-- https://drive.google.com/file/d/1orAlKA78_qbradx530JmQ0CXSZXZyTGw/view
+## Problem statement
+
+In this problem we’ll create a micro-service to address some functionality which is useful to
+derive simplified summary statistics (mean, min, max) on a dataset. The dataset that you’ll be
+working with can be found later in the document and yes, it’s been kept very simple by design.
+In our view, depending on your speed and how elegantly you want to solve this problem, it could
+take you anywhere between 2 - 4 hours to implement this.
+NOTE: Whenever we mention <SS> we mean summary statistics which essentially means 3
+values (mean, min, max)
+For this assignment, we are looking for following functionality to be implemented:
+1. An API to add a new record to the dataset.
+2. An API to delete a new record to the dataset.
+3. An API to fetch SS for salary over the entire dataset. You can ignore the currency (if not
+mentioned otherwise) of the salary and simply treat salary as a number.
+4. An API to fetch SS for salary for records which satisfy "on_contract": "true". 5. An
+API to fetch SS for salary for each department. This means that whatever you’ll do in Step
+3, should be done for each department. The return of this API should have 1 SS available
+for each unique department.
+6. An API to fetch SS for salary for each department and sub-department combination. This
+is similar to Case 5 but 1 level of nested aggregation.
 
 ## Installation
 After you have unzipped the code, you want to create a virtual environment, so you have a clean python installation.
